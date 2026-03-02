@@ -4,8 +4,6 @@ using namespace std;
 
 // Analisis Kompleksitas Waktu Algoritma FindMin
 
-// Pseudocode + Cost:
-
 // 1. min ← A[0]                → c1 (1 kali)
 // 2. for i ← 1 to n-1         → c2 (n-1 kali)
 // 3.    if A[i] < min         → c3 (n-1 kali)
@@ -18,7 +16,7 @@ using namespace std;
 
 // Tmin(n) = c1 + c5 + (n-1)c2 + (n-1)c3
 // Tmin(n) = an + b
-// Tmin(n) ∈ O(n)
+// Tmin(n) = O(n)
 
 // WORST CASE (Tmax(n))
 // Terjadi jika array terurut menurun,
@@ -26,13 +24,7 @@ using namespace std;
 
 // Tmax(n) = c1 + c5 + (n-1)c2 + (n-1)c3 + (n-1)c4
 // Tmax(n) = an + b
-// Tmax(n) ∈ O(n)
-
-// Kesimpulan:
-// Best Case  : O(n)
-// Worst Case : O(n)
-// Algoritma linear karena jumlah iterasi bergantung pada n.
-
+// Tmax(n) = O(n)
 
 int FindMin(int A[], int n, int &indexMin) {
     int min = A[0];
